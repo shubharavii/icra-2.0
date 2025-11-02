@@ -35,14 +35,14 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-20 bg-background">
       {/* Hero Section */}
-      <section className="py-20 gradient-hero">
+      <section className="py-20 bg-gradient-hero border-b border-border">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
+          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in">
             Get in Touch
           </h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto animate-fade-in">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in">
             Let's discuss how we can transform your space with smart automation
           </p>
         </div>
@@ -55,10 +55,10 @@ const Contact = () => {
             {contactInfo.map((item, index) => (
               <div
                 key={index}
-                className="bg-card p-8 rounded-xl shadow-md hover:shadow-glow transition-smooth hover-lift text-center"
+                className="bg-card p-8 rounded-xl shadow-elegant border border-border hover:border-primary hover:shadow-glow-blue transition-smooth hover-lift text-center"
               >
                 <item.icon className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-2xl font-semibold mb-6">{item.title}</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-foreground">{item.title}</h3>
                 <div className="space-y-4">
                   {item.details.map((detail, idx) => (
                     <div key={idx} className="space-y-1">
@@ -77,17 +77,17 @@ const Contact = () => {
       </section>
 
       {/* Map Section (Placeholder) */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-card/20 border-y border-border">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-12 text-foreground">
             Visit Our Office
           </h2>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-card rounded-xl shadow-md overflow-hidden h-96 flex items-center justify-center">
+            <div className="bg-card border border-border rounded-xl shadow-elegant overflow-hidden h-96 flex items-center justify-center hover:border-primary transition-smooth">
               <div className="text-center space-y-4">
                 <MapPin className="h-16 w-16 text-primary mx-auto" />
                 <div>
-                  <p className="text-xl font-semibold mb-2">ICRA Technologies</p>
+                  <p className="text-xl font-semibold mb-2 text-foreground">ICRA Technologies</p>
                   <p className="text-muted-foreground">
                     #F-509, BEL Layout, 1st Stage
                   </p>
@@ -106,7 +106,7 @@ const Contact = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center space-y-8">
-            <h2 className="text-3xl md:text-5xl font-bold mb-8">
+            <h2 className="text-3xl md:text-5xl font-bold mb-8 text-foreground">
               Connect With Us
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -116,10 +116,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="inline-block"
               >
-                <Button
-                  size="lg"
-                  className="gradient-primary hover:shadow-glow transition-smooth border border-transparent hover:border-primary group"
-                >
+                <Button size="lg">
                   <Instagram className="mr-2 h-5 w-5" />
                   Follow us on Instagram
                 </Button>
@@ -141,30 +138,23 @@ const Contact = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 gradient-secondary">
+      <section className="py-20 bg-gradient-secondary border-t border-border">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
             Ready to Transform Your Space?
           </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Reach out today and let's bring your automation vision to life
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:+918151879391">
-              <Button
-                size="lg"
-                className="bg-white text-primary hover:bg-white/90 hover:shadow-glow transition-smooth border-2 border-white"
-              >
+              <Button size="lg" variant="secondary">
                 <Phone className="mr-2 h-5 w-5" />
                 Call Us Now
               </Button>
             </a>
             <a href="mailto:icratechnologies25@gmail.com">
-              <Button
-                size="lg"
-                variant="outline"
-                className="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-primary transition-smooth"
-              >
+              <Button size="lg" variant="outline">
                 <Mail className="mr-2 h-5 w-5" />
                 Email Us
               </Button>

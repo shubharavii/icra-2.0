@@ -63,19 +63,19 @@ const Reviews = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-secondary">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
           What Our Clients Say
         </h2>
-        <p className="text-center text-white/80 mb-12">
+        <p className="text-center text-primary mb-12">
           90% client satisfaction rate
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {visibleReviews.map((review, index) => (
             <div
               key={`${review.name}-${index}`}
-              className="bg-white rounded-xl p-6 shadow-elegant hover:shadow-glow transition-smooth animate-fade-in"
+              className="bg-card border border-border rounded-xl p-6 shadow-elegant hover:shadow-glow-blue hover:border-primary transition-smooth animate-fade-in"
             >
               <div className="flex gap-1 mb-4">
                 {[...Array(review.rating)].map((_, i) => (

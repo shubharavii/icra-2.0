@@ -36,8 +36,8 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-elegant border-b border-border"
-          : "bg-gradient-primary"
+          ? "bg-background/80 backdrop-blur-xl shadow-elegant border-b border-border"
+          : "bg-background/60 backdrop-blur-lg border-b border-border/50"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -47,9 +47,9 @@ const Header = () => {
             <img
               src={logoSymbol}
               alt="ICRA Technologies"
-              className="h-12 w-12 object-contain"
+              className="h-12 w-12 object-contain rounded-lg"
             />
-            <span className={`font-bold text-xl ${isScrolled ? "text-foreground" : "text-white"}`}>
+            <span className="font-bold text-xl text-foreground">
               ICRA Technologies
             </span>
           </Link>
@@ -60,9 +60,6 @@ const Header = () => {
               <Link key={link.path} to={link.path}>
                 <Button
                   variant={isActive(link.path) ? "default" : "ghost"}
-                  className={`transition-smooth border border-transparent hover:border-primary ${
-                    !isScrolled && !isActive(link.path) ? "text-white hover:text-foreground hover:bg-white" : ""
-                  }`}
                 >
                   {link.name}
                 </Button>
@@ -78,9 +75,9 @@ const Header = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className={isScrolled ? "text-foreground" : "text-white"} />
+              <X className="text-foreground" />
             ) : (
-              <Menu className={isScrolled ? "text-foreground" : "text-white"} />
+              <Menu className="text-foreground" />
             )}
           </Button>
         </div>
@@ -92,7 +89,7 @@ const Header = () => {
               <Link key={link.path} to={link.path} className="block">
                 <Button
                   variant={isActive(link.path) ? "default" : "ghost"}
-                  className="w-full justify-start transition-smooth border border-transparent hover:border-primary"
+                  className="w-full justify-start"
                 >
                   {link.name}
                 </Button>

@@ -4,7 +4,7 @@ import logoSymbol from "@/assets/logo-symbol.jpg";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-primary text-white">
+    <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo & About */}
@@ -15,34 +15,34 @@ const Footer = () => {
                 alt="ICRA Technologies"
                 className="h-10 w-10 object-contain"
               />
-              <span className="font-bold text-lg">ICRA Technologies</span>
+              <span className="font-bold text-lg text-foreground">ICRA Technologies</span>
             </div>
-            <p className="text-sm text-white/80">
+            <p className="text-sm text-muted-foreground">
               Right ideas to bright ideas
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-lg mb-4 text-foreground">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-white/80 hover:text-white transition-smooth">
+                <Link to="/" className="text-muted-foreground hover:text-primary transition-smooth gradient-line-hover inline-block">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-white/80 hover:text-white transition-smooth">
+                <Link to="/about" className="text-muted-foreground hover:text-primary transition-smooth gradient-line-hover inline-block">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-white/80 hover:text-white transition-smooth">
+                <Link to="/services" className="text-muted-foreground hover:text-primary transition-smooth gradient-line-hover inline-block">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/projects" className="text-white/80 hover:text-white transition-smooth">
+                <Link to="/projects" className="text-muted-foreground hover:text-primary transition-smooth gradient-line-hover inline-block">
                   Projects
                 </Link>
               </li>
@@ -51,20 +51,20 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Contact</h3>
+            <h3 className="font-semibold text-lg mb-4 text-foreground">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
-                <Phone className="h-5 w-5 mt-0.5 flex-shrink-0" />
+                <Phone className="h-5 w-5 mt-0.5 flex-shrink-0 text-primary" />
                 <div className="space-y-1">
-                  <p className="text-sm">+91 81518 79391</p>
-                  <p className="text-sm">+91 94813 25000</p>
+                  <p className="text-sm text-muted-foreground">+91 81518 79391</p>
+                  <p className="text-sm text-muted-foreground">+91 94813 25000</p>
                 </div>
               </li>
               <li className="flex items-start gap-2">
-                <Mail className="h-5 w-5 mt-0.5 flex-shrink-0" />
+                <Mail className="h-5 w-5 mt-0.5 flex-shrink-0 text-primary" />
                 <a
                   href="mailto:icratechnologies25@gmail.com"
-                  className="text-sm hover:text-white/80 transition-smooth"
+                  className="text-sm text-muted-foreground hover:text-primary transition-smooth"
                 >
                   icratechnologies25@gmail.com
                 </a>
@@ -74,11 +74,11 @@ const Footer = () => {
 
           {/* Address & Social */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Visit Us</h3>
+            <h3 className="font-semibold text-lg mb-4 text-foreground">Visit Us</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-2">
-                <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
-                <p className="text-sm text-white/80">
+                <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0 text-primary" />
+                <p className="text-sm text-muted-foreground">
                   #F-509, BEL Layout, 1st Stage,
                   <br />
                   Bharatnagar, Herohalli,
@@ -87,12 +87,12 @@ const Footer = () => {
                 </p>
               </div>
               <div>
-                <p className="text-sm font-semibold mb-2">Follow Us</p>
+                <p className="text-sm font-semibold mb-2 text-foreground">Follow Us</p>
                 <a
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-smooth"
+                  className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-smooth gradient-line-hover"
                 >
                   <Instagram className="h-5 w-5" />
                   <span className="text-sm">Instagram</span>
@@ -103,12 +103,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-white/20">
+        <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-white/60">
+            <p className="text-sm text-muted-foreground">
               © {new Date().getFullYear()} ICRA Technologies. All rights reserved.
             </p>
-            <p className="text-sm text-white/60">www.icratechnologies.com</p>
+            <p className="text-sm text-muted-foreground">www.icratechnologies.com</p>
           </div>
         </div>
       </div>

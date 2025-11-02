@@ -49,38 +49,31 @@ const Home = () => {
           backgroundAttachment: "fixed",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-overlay" />
-        <div className="absolute inset-0 bg-gradient-hero opacity-60" />
+        <div className="absolute inset-0 bg-background/60" />
+        <div className="absolute inset-0 bg-gradient-hero opacity-80" />
         
         <div className="relative z-10 container mx-auto px-4 py-32 text-center">
           <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
             <img
               src={logoMain}
               alt="ICRA Technologies"
-              className="mx-auto h-32 md:h-40 object-contain animate-float"
+              className="mx-auto h-32 md:h-40 object-contain animate-float drop-shadow-2xl"
             />
-            <h1 className="text-4xl md:text-6xl font-bold text-white">
+            <h1 className="text-4xl md:text-6xl font-bold text-foreground drop-shadow-lg">
               Right Ideas to Bright Ideas
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
               Leading provider of smart automation and AV integration solutions
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Link to="/projects">
-                <Button
-                  size="lg"
-                  className="gradient-primary hover:shadow-glow transition-smooth border-2 border-white text-white hover:scale-105 group"
-                >
+                <Button size="lg" variant="default">
                   View Our Projects
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-primary transition-smooth"
-                >
+                <Button size="lg" variant="secondary">
                   Get in Touch
                 </Button>
               </Link>
@@ -90,13 +83,13 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background border-y border-border">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="text-center space-y-3 p-6 rounded-xl bg-card hover:shadow-elegant transition-smooth hover-lift"
+                className="text-center space-y-3 p-6 rounded-xl bg-card border border-border hover:border-primary hover:shadow-glow-blue transition-smooth hover-lift"
               >
                 <stat.icon className="h-12 w-12 mx-auto text-primary" />
                 <p className="text-4xl font-bold text-gradient">{stat.value}</p>
@@ -108,10 +101,10 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-card/20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-foreground">
               Our Services
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -122,22 +115,19 @@ const Home = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-card p-8 rounded-xl shadow-md hover:shadow-glow transition-smooth hover-lift group"
+                className="bg-card p-8 rounded-xl shadow-elegant border border-border hover:border-primary hover:shadow-glow-blue transition-smooth hover-lift group"
               >
                 <div className="text-5xl mb-4 group-hover:animate-float">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+                <h3 className="text-xl font-semibold mb-3 text-foreground">{feature.title}</h3>
                 <p className="text-muted-foreground">{feature.description}</p>
               </div>
             ))}
           </div>
           <div className="text-center mt-12">
             <Link to="/services">
-              <Button
-                size="lg"
-                className="gradient-primary hover:shadow-glow transition-smooth border border-transparent hover:border-primary group"
-              >
+              <Button size="lg">
                 Learn More About Our Services
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -153,19 +143,16 @@ const Home = () => {
       <Reviews />
 
       {/* CTA Section */}
-      <section className="py-20 gradient-hero">
+      <section className="py-20 bg-gradient-secondary border-t border-border">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
             Ready to Transform Your Space?
           </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Let's discuss how we can bring your automation vision to life
           </p>
           <Link to="/contact">
-            <Button
-              size="lg"
-              className="bg-white text-primary hover:bg-white/90 hover:shadow-glow transition-smooth border-2 border-white"
-            >
+            <Button size="lg" variant="secondary">
               Contact Us Today
             </Button>
           </Link>
