@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import mapQrCode from "@/assets/map-qr-code.png";
 
 const Contact = () => {
   const contactInfo = [
@@ -83,18 +84,30 @@ const Contact = () => {
             Visit Our Office
           </h2>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-card border border-border rounded-xl shadow-elegant overflow-hidden h-96 flex items-center justify-center hover:border-primary transition-smooth">
-              <div className="text-center space-y-4">
-                <MapPin className="h-16 w-16 text-primary mx-auto" />
-                <div>
-                  <p className="text-xl font-semibold mb-2 text-foreground">ICRA Technologies</p>
-                  <p className="text-muted-foreground">
-                    #F-509, BEL Layout, 1st Stage
-                  </p>
-                  <p className="text-muted-foreground">
-                    Bharatnagar, Herohalli
-                  </p>
-                  <p className="text-muted-foreground">Bangalore - 560091</p>
+            <div className="bg-card border border-border rounded-xl shadow-elegant overflow-hidden p-8 hover:border-primary transition-smooth">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+                <div className="text-center md:text-left space-y-4 flex-1">
+                  <MapPin className="h-16 w-16 text-primary mx-auto md:mx-0" />
+                  <div>
+                    <p className="text-xl font-semibold mb-2 text-foreground">ICRA Technologies</p>
+                    <p className="text-muted-foreground">
+                      #F-509, BEL Layout, 1st Stage
+                    </p>
+                    <p className="text-muted-foreground">
+                      Bharatnagar, Herohalli
+                    </p>
+                    <p className="text-muted-foreground">Bangalore - 560091</p>
+                  </div>
+                </div>
+                <div className="flex-shrink-0">
+                  <div className="bg-white p-4 rounded-xl shadow-lg">
+                    <img 
+                      src={mapQrCode} 
+                      alt="Scan for Google Maps location" 
+                      className="w-48 h-48 object-contain"
+                    />
+                    <p className="text-center text-sm text-gray-600 mt-2">Scan to navigate</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -143,7 +156,7 @@ const Contact = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
             Ready to Transform Your Space?
           </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
             Reach out today and let's bring your automation vision to life
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -102,7 +102,7 @@ const About = () => {
                 Chandra Shekar Gowda BM
               </h3>
               <p className="text-primary font-medium mb-4">Managing Director</p>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground whitespace-nowrap">
                 Leading ICRA Technologies with vision and innovation
               </p>
             </div>
@@ -126,7 +126,7 @@ const About = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
             Join Our Journey
           </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
             Experience the ICRA difference in automation excellence
           </p>
           <Link to="/contact">

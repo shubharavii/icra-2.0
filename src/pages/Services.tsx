@@ -198,7 +198,7 @@ const Services = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
             Let's discuss how our services can transform your space
           </p>
           <Link to="/contact">

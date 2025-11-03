@@ -127,7 +127,7 @@ const Projects = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
             Ready to Start Your Project?
           </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
             Let's create something amazing together
           </p>
           <a href="/contact">

@@ -41,7 +41,7 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 hover-lift">
             <img
@@ -54,8 +54,8 @@ const Header = () => {
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-2">
+          {/* Desktop Navigation - Centered */}
+          <nav className="hidden md:flex items-center gap-2 mx-auto">
             {navLinks.map((link) => (
               <Link key={link.path} to={link.path}>
                 <Button
@@ -71,7 +71,7 @@ const Header = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="md:hidden ml-auto"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (

@@ -62,7 +62,7 @@ const Home = () => {
             <h1 className="text-4xl md:text-6xl font-bold text-foreground drop-shadow-lg">
               Right Ideas to Bright Ideas
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto whitespace-nowrap">
               Leading provider of smart automation and AV integration solutions
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
@@ -148,7 +148,7 @@ const Home = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
             Ready to Transform Your Space?
           </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
             Let's discuss how we can bring your automation vision to life
           </p>
           <Link to="/contact">

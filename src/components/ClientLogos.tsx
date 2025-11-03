@@ -20,9 +20,9 @@ const ClientLogos = () => {
           {[...clients, ...clients].map((client, index) => (
             <div
               key={index}
-              className="flex-shrink-0 mx-8 px-8 py-4 bg-white rounded-lg shadow-md hover:shadow-glow transition-smooth"
+              className="flex-shrink-0 mx-8 px-8 py-4 bg-card rounded-lg shadow-md hover:shadow-glow border border-border transition-smooth"
             >
-              <p className="text-lg font-semibold text-foreground whitespace-nowrap">
+              <p className="text-lg font-semibold text-primary whitespace-nowrap">
                 {client}
               </p>
             </div>
