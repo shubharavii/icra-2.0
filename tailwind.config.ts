@@ -95,6 +95,7 @@ export default {
         "fade-in": "fade-in 0.6s ease-out",
         "slide-in": "slide-in 0.6s ease-out",
         "scroll": "scroll 30s linear infinite",
+        "scroll-fast": "scroll 15s linear infinite",
         "float": "float 3s ease-in-out infinite",
       },
     },

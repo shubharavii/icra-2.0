@@ -89,14 +89,14 @@ const Contact = () => {
                 <div className="text-center md:text-left space-y-4 flex-1">
                   <MapPin className="h-16 w-16 text-primary mx-auto md:mx-0" />
                   <div>
-                    <p className="text-xl font-semibold mb-2 text-foreground">ICRA Technologies</p>
-                    <p className="text-muted-foreground">
+                    <p className="text-2xl font-semibold mb-3 text-foreground">ICRA Technologies</p>
+                    <p className="text-lg text-muted-foreground">
                       #F-509, BEL Layout, 1st Stage
                     </p>
-                    <p className="text-muted-foreground">
+                    <p className="text-lg text-muted-foreground">
                       Bharatnagar, Herohalli
                     </p>
-                    <p className="text-muted-foreground">Bangalore - 560091</p>
+                    <p className="text-lg text-muted-foreground">Bangalore - 560091</p>
                   </div>
                 </div>
                 <div className="flex-shrink-0">

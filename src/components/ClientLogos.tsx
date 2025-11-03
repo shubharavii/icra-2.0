@@ -16,7 +16,7 @@ const ClientLogos = () => {
         </p>
       </div>
       <div className="relative">
-        <div className="flex animate-scroll">
+        <div className="flex animate-scroll-fast">
           {[...clients, ...clients].map((client, index) => (
             <div
               key={index}

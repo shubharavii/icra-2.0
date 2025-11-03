@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, Zap, Shield, Award } from "lucide-react";
-import logoMain from "@/assets/logo-main.jpg";
+import logoShapes from "@/assets/logo-shapes.png";
 import officeBg from "@/assets/office-bg.jpg";
 import ClientLogos from "@/components/ClientLogos";
 import Reviews from "@/components/Reviews";
@@ -54,14 +54,19 @@ const Home = () => {
         
         <div className="relative z-10 container mx-auto px-4 py-32 text-center">
           <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
-            <img
-              src={logoMain}
-              alt="ICRA Technologies"
-              className="mx-auto h-40 md:h-56 object-contain animate-float drop-shadow-2xl"
-            />
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground drop-shadow-lg">
+            <div className="flex flex-col items-center gap-4">
+              <img
+                src={logoShapes}
+                alt="ICRA Technologies Logo"
+                className="h-40 md:h-56 object-contain animate-float"
+              />
+              <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-lg" style={{ textShadow: '0 0 20px rgba(14, 165, 233, 0.8), 0 0 40px rgba(14, 165, 233, 0.5)' }}>
+                ICRA TECHNOLOGIES
+              </h1>
+            </div>
+            <p className="text-2xl md:text-3xl font-semibold text-white drop-shadow-lg">
               Right Ideas to Bright Ideas
-            </h1>
+            </p>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto whitespace-nowrap">
               Leading provider of smart automation and AV integration solutions
             </p>
