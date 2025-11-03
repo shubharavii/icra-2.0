@@ -57,7 +57,7 @@ const Home = () => {
             <img
               src={logoMain}
               alt="ICRA Technologies"
-              className="mx-auto h-32 md:h-40 object-contain animate-float drop-shadow-2xl"
+              className="mx-auto h-40 md:h-56 object-contain animate-float drop-shadow-2xl"
             />
             <h1 className="text-4xl md:text-6xl font-bold text-foreground drop-shadow-lg">
               Right Ideas to Bright Ideas
