@@ -60,7 +60,7 @@ const Home = () => {
                 alt="ICRA Technologies Logo"
                 className="h-80 md:h-[32rem] object-contain animate-float"
               />
-              <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-lg -mt-16 md:-mt-24" style={{ textShadow: '0 0 20px rgba(14, 165, 233, 0.8), 0 0 40px rgba(14, 165, 233, 0.5)' }}>
+              <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-lg -mt-20 md:-mt-32" style={{ textShadow: '0 0 20px rgba(14, 165, 233, 0.8), 0 0 40px rgba(14, 165, 233, 0.5)' }}>
                 ICRA TECHNOLOGIES
               </h1>
             </div>
