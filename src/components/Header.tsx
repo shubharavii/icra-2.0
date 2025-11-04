@@ -47,7 +47,7 @@ const Header = () => {
             <img
               src={logoShapes}
               alt="ICRA Technologies"
-              className="h-12 w-12 object-contain"
+              className="h-16 w-16 object-contain"
             />
             <span className="font-bold text-xl text-foreground">
               ICRA Technologies

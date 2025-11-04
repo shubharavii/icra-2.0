@@ -13,7 +13,7 @@ const Footer = () => {
               <img
                 src={logoShapes}
                 alt="ICRA Technologies"
-                className="h-12 w-12 object-contain"
+                className="h-16 w-16 object-contain"
               />
               <div>
                 <p className="font-bold text-xl text-foreground">ICRA Technologies</p>
