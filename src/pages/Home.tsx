@@ -54,7 +54,7 @@ const Home = () => {
         
         <div className="relative z-10 container mx-auto px-4 py-32 text-center">
           <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
-            <div className="flex flex-col items-center gap-2">
+            <div className="flex flex-col items-center gap-0">
               <img
                 src={logoShapes}
                 alt="ICRA Technologies Logo"
