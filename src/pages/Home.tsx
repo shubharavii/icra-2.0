@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, Zap, Shield, Award } from "lucide-react";
-import logoShapes from "@/assets/logo-shapes.png";
+import logoShapes from "@/assets/logo-shapes-new.png";
 import officeBg from "@/assets/office-bg.jpg";
 import ClientLogos from "@/components/ClientLogos";
 import Reviews from "@/components/Reviews";
