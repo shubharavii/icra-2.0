@@ -54,11 +54,11 @@ const Home = () => {
         
         <div className="relative z-10 container mx-auto px-4 py-32 text-center">
           <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
-            <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col items-center gap-2">
               <img
                 src={logoShapes}
                 alt="ICRA Technologies Logo"
-                className="h-72 md:h-96 object-contain animate-float"
+                className="h-80 md:h-[32rem] object-contain animate-float"
               />
               <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-lg" style={{ textShadow: '0 0 20px rgba(14, 165, 233, 0.8), 0 0 40px rgba(14, 165, 233, 0.5)' }}>
                 ICRA TECHNOLOGIES
