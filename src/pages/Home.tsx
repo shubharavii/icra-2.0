@@ -58,8 +58,7 @@ const Home = () => {
               <img
                 src={logoShapes}
                 alt="ICRA Technologies Logo"
-                className="h-80 md:h-[28rem] object-contain animate-float"
-                style={{ filter: 'drop-shadow(0 0 20px rgba(14, 165, 233, 0.8)) drop-shadow(0 0 40px rgba(14, 165, 233, 0.5))' }}
+                className="h-72 md:h-96 object-contain animate-float"
               />
               <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-lg" style={{ textShadow: '0 0 20px rgba(14, 165, 233, 0.8), 0 0 40px rgba(14, 165, 233, 0.5)' }}>
                 ICRA TECHNOLOGIES
