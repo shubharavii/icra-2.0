@@ -43,7 +43,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 hover-lift">
+          <Link to="/" className="flex items-end gap-2 hover-lift pb-1">
             <img
               src={logoShapes}
               alt="ICRA Technologies"
