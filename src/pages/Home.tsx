@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, Zap, Shield, Award } from "lucide-react";
-import logoShapes from "@/assets/logo-shapes-new.png";
+import logoShapes from "@/assets/logo-new.png";
 import officeBg from "@/assets/office-bg.jpg";
 import ClientLogos from "@/components/ClientLogos";
 import Reviews from "@/components/Reviews";
@@ -52,7 +52,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-background/60" />
         <div className="absolute inset-0 bg-gradient-hero opacity-80" />
         
-        <div className="relative z-10 container mx-auto px-4 py-32 text-center">
+        <div className="relative z-10 container mx-auto px-4 py-24 text-center">
           <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
             <div className="flex flex-col items-center gap-0">
               <img

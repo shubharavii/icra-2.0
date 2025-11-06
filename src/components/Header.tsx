@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoShapes from "@/assets/logo-shapes-new.png";
+import logoShapes from "@/assets/logo-new.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,7 +43,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 hover-lift">
+          <Link to="/" className="flex items-center gap-2 hover-lift">
             <img
               src={logoShapes}
               alt="ICRA Technologies"
