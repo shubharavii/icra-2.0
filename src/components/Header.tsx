@@ -43,13 +43,13 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 hover-lift">
+          <Link to="/" className="flex items-center gap-3 hover-lift">
             <img
               src={logoShapes}
               alt="ICRA Technologies"
-              className="h-20 w-20 object-contain"
+              className="h-16 w-16 object-contain"
             />
-            <span className="font-bold text-xl text-foreground -mb-1">
+            <span className="font-bold text-xl text-foreground leading-none">
               ICRA Technologies
             </span>
           </Link>
