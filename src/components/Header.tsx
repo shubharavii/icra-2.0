@@ -49,7 +49,7 @@ const Header = () => {
               alt="ICRA Technologies"
               className="h-20 w-20 object-contain"
             />
-            <span className="font-bold text-xl text-foreground">
+            <span className="font-bold text-xl text-foreground -mb-1">
               ICRA Technologies
             </span>
           </Link>
