@@ -8,7 +8,7 @@ import Reviews from "@/components/Reviews";
 
 const Home = () => {
   const stats = [
-    { icon: CheckCircle, label: "Projects Completed", value: "200+" },
+    { icon: CheckCircle, label: "Projects Completed", value: "150+" },
     { icon: Award, label: "Happy Clients", value: "50+" },
     { icon: Shield, label: "Client Satisfaction", value: "90%" },
     { icon: Zap, label: "Years Experience", value: "10+" },

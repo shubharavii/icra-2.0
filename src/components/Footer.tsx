@@ -44,8 +44,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/projects" className="text-base text-muted-foreground hover:text-primary transition-smooth gradient-line-hover inline-block">
+              <Link to="/projects" className="text-base text-muted-foreground hover:text-primary transition-smooth gradient-line-hover inline-block">
                   Projects
+                </Link>
+              </li>
+              <li>
+                <Link to="/brochure" className="text-base text-muted-foreground hover:text-primary transition-smooth gradient-line-hover inline-block">
+                  Brochure
                 </Link>
               </li>
             </ul>

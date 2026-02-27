@@ -51,7 +51,7 @@ const About = () => {
             <p>
               ICRA Technologies is a leading provider of smart home automation and
               audio-visual integration solutions in India. With over a decade of experience,
-              we have successfully completed 200+ projects for 50+ enterprise clients.
+              we have successfully completed 150+ projects for 50+ enterprise clients.
             </p>
             <p>
               Our expertise spans across residential and commercial automation, conference
