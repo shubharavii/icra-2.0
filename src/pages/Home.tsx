@@ -52,7 +52,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-background/60" />
         <div className="absolute inset-0 bg-gradient-hero opacity-80" />
         
-        <div className="relative z-10 container mx-auto px-4 pt-0 pb-8 text-center -mt-12">
+        <div className="relative z-10 container mx-auto px-4 pt-0 pb-8 text-center -mt-32 md:-mt-40">
           <div className="max-w-4xl mx-auto space-y-6 animate-fade-in">
             <div className="flex flex-col items-center">
               <img
