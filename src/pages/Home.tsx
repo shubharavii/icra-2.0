@@ -52,36 +52,41 @@ const Home = () => {
         <div className="absolute inset-0 bg-background/60" />
         <div className="absolute inset-0 bg-gradient-hero opacity-80" />
         
-        <div className="relative z-10 container mx-auto px-4 pt-0 pb-8 text-center -mt-32 md:-mt-40">
-          <div className="max-w-4xl mx-auto space-y-6 animate-fade-in">
+        <div className="relative z-10 container mx-auto px-4 text-center -mt-8 md:-mt-12">
+          <div className="max-w-4xl mx-auto animate-fade-in">
+            {/* Title Group */}
             <div className="flex flex-col items-center">
               <img
                 src={logoShapes}
                 alt="ICRA Technologies Logo"
-                className="h-72 md:h-[28rem] object-contain animate-float"
+                className="h-56 md:h-[22rem] object-contain animate-float"
               />
-              <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-lg -mt-36 md:-mt-44" style={{ textShadow: '0 0 20px rgba(14, 165, 233, 0.8), 0 0 40px rgba(14, 165, 233, 0.5)' }}>
+              <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg -mt-28 md:-mt-36" style={{ textShadow: '0 0 20px rgba(14, 165, 233, 0.8), 0 0 40px rgba(14, 165, 233, 0.5)' }}>
                 ICRA TECHNOLOGIES
               </h1>
             </div>
-            <p className="text-xl md:text-2xl italic text-white/90 drop-shadow-lg">
+            <p className="text-lg md:text-2xl italic text-white/90 drop-shadow-lg mt-4">
               "Right Ideas to Bright Ideas"
             </p>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto whitespace-nowrap mt-6">
-              Leading provider of smart automation and AV integration solutions
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Link to="/projects">
-                <Button size="lg" variant="default">
-                  View Our Projects
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </Link>
-              <Link to="/contact">
-                <Button size="lg" variant="secondary">
-                  Get in Touch
-                </Button>
-              </Link>
+
+            {/* Description + CTA Group */}
+            <div className="mt-16 md:mt-20 space-y-6">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+                Leading provider of smart automation and AV integration solutions
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
+                <Link to="/projects">
+                  <Button size="lg" variant="default">
+                    View Our Projects
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
+                <Link to="/contact">
+                  <Button size="lg" variant="secondary">
+                    Get in Touch
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
