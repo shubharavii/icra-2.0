@@ -101,7 +101,7 @@ const About = () => {
               <h3 className="text-2xl font-semibold mb-2 text-foreground">
                 Chandra Shekar Gowda BM
               </h3>
-              <p className="text-primary font-medium mb-4">Managing Director</p>
+              <p className="text-primary font-medium mb-4">Director</p>
               <p className="text-muted-foreground whitespace-nowrap">
                 Leading ICRA Technologies with vision and innovation
               </p>
@@ -111,7 +111,7 @@ const About = () => {
               <h3 className="text-2xl font-semibold mb-2 text-foreground">
                 Ravikeerthana Chandrashekhar
               </h3>
-              <p className="text-accent-orange font-medium mb-4">Creative Director</p>
+              <p className="text-accent-orange font-medium mb-4">Director</p>
               <p className="text-muted-foreground">
                 Driving creative excellence in every project
               </p>

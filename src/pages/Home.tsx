@@ -67,7 +67,7 @@ const Home = () => {
             <p className="text-xl md:text-2xl italic text-white/90 drop-shadow-lg">
               "Right Ideas to Bright Ideas"
             </p>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto whitespace-nowrap">
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto whitespace-nowrap mt-6">
               Leading provider of smart automation and AV integration solutions
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
