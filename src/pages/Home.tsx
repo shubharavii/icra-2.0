@@ -52,20 +52,20 @@ const Home = () => {
         <div className="absolute inset-0 bg-background/60" />
         <div className="absolute inset-0 bg-gradient-hero opacity-80" />
         
-        <div className="relative z-10 container mx-auto px-4 py-8 text-center">
-          <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
-            <div className="flex flex-col items-center gap-0">
+        <div className="relative z-10 container mx-auto px-4 pt-0 pb-8 text-center -mt-12">
+          <div className="max-w-4xl mx-auto space-y-6 animate-fade-in">
+            <div className="flex flex-col items-center">
               <img
                 src={logoShapes}
                 alt="ICRA Technologies Logo"
-                className="h-80 md:h-[32rem] object-contain animate-float"
+                className="h-72 md:h-[28rem] object-contain animate-float"
               />
-              <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-lg -mt-40 md:-mt-52" style={{ textShadow: '0 0 20px rgba(14, 165, 233, 0.8), 0 0 40px rgba(14, 165, 233, 0.5)' }}>
+              <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-lg -mt-36 md:-mt-44" style={{ textShadow: '0 0 20px rgba(14, 165, 233, 0.8), 0 0 40px rgba(14, 165, 233, 0.5)' }}>
                 ICRA TECHNOLOGIES
               </h1>
             </div>
-            <p className="text-2xl md:text-3xl font-semibold text-white drop-shadow-lg">
-              Right Ideas to Bright Ideas
+            <p className="text-xl md:text-2xl italic text-white/90 drop-shadow-lg">
+              "Right Ideas to Bright Ideas"
             </p>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto whitespace-nowrap">
               Leading provider of smart automation and AV integration solutions
